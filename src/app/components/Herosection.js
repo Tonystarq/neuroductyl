@@ -1,6 +1,5 @@
 import heroStyles from "@/app/styles/herosection.module.css"
 import styles from "@/app/styles/common.module.css"
-import Image from "next/image";
 import Link from "next/link";
 import { Mulish } from 'next/font/google';
 
@@ -18,10 +17,10 @@ const Herosection = ({title, imageUrl}) => {
                 <div className={styles.grid_two_section}>
                     <div className={heroStyles.hero_content}>
                         <h1>Contactless fingerprint recognition</h1>
-                        <p> <li>1. Highly accurate neural network algorithms</li>
+                        <span> <li>1. Highly accurate neural network algorithms</li>
                         <li>2. Work with scans and photo images</li>
                         <li>3. All types of fingerprints are supported</li>
-                        </p>
+                        </span>
                         <Link href="https://pages.nist.gov/pft/results/pftiii/">
                             <button className={mulish.className}>
                             NIST PFT III evaluation
@@ -30,7 +29,7 @@ const Herosection = ({title, imageUrl}) => {
                     </div>
 
                     <div className={heroStyles.hero_image}>
-                        <Image src="/hand_sm_new.png" alt="Fingerprint" width={500} height={500}/>
+                    <img src="/hand_sm_new.png" width={500} height={500} alt="Italian Trulli"></img>
                     </div>
                 </div>
             </div>

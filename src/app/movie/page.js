@@ -1,14 +1,6 @@
 import React from 'react';
-import Image from "next/image";
 import styles from "@/app/styles/common.module.css"
 import heroStyles from "@/app/styles/herosection.module.css"
-import Link from "next/link";
-import { Mulish } from 'next/font/google';
-const mulish = Mulish({
-    weight: ['300', '400', '500', '600', '700', '800', '900'],
-    subsets: ['latin'],
-    display: 'swap'
-})
 const Movie = async () => {
 
 

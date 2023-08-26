@@ -1,5 +1,4 @@
 import styles from '@/app/styles/common.module.css'
-import Image from "next/image";
 import Link from "next/link";
 const MovieCard = (curElem) => {
 
@@ -9,7 +8,7 @@ const MovieCard = (curElem) => {
         <>
             <div className={styles.card}>
                 <div className={styles.card_image}>
-                    <Image src={curElem.jawSummary.backgroundImage.url} alt={title} width={260} height={200} />
+                <img src={curElem.jawSummary.backgroundImage.url} width={260} height={200} alt="Italian Trulli"></img>
                 </div>
                 <div className={styles.card_data}>
                     <h2>{title.substring(0,18)}</h2>
